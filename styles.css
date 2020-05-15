@@ -1,0 +1,306 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #0B0101;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/image-1@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.menu {
+    padding: 25px 0px;
+}
+
+.menu p {
+    font-family: 'Kanit', sans-serif;;
+    font-weight: 600;
+    font-weight: 20px;
+    text-transform: uppercase;
+    color: white;
+    display: inline;
+    position: relative;
+}
+
+.menu ul {
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    float: right;
+}
+
+.menu li {
+    float: left;
+    padding-left: 30px;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 116.2px;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: .9;
+    color: #CC1D36;
+}
+
+.hero {
+    position: absolute;
+    bottom: 190px;
+    left: 70px;
+}
+
+h1 ~ p {
+    color: white;
+    font-size: 31px;
+}
+.icons{
+    position: absolute;
+    bottom: 3%;
+    right: 2%;
+}
+.icons i {
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 8px;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2 ~ p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.row h2 {
+    padding: 55px 0px
+}
+
+.cars ul {
+    float: right;
+}
+
+.row .cars li {
+    float: left;
+    width: calc( (100% / 3) - 20px);
+    margin: 10px;
+}
+/* figure out how to remove margin on left and right  */
+
+.highlight {
+    margin: 40px 0;
+}
+
+.highlight img {
+    width: 25%;
+    float: left;
+}
+
+.highlight-text h2, p{
+    text-align: left;
+}
+
+.highlight-text p {
+    padding: 15px 0;
+}
+
+.highlight-text {
+    width: 73%;
+    float: right;
+}
+
+.button {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: #BA0621;
+    padding: 10px 15px;
+    display: inline;
+}
+
+.grid-text-1, .grid-img-2 {
+    width: 50%;
+    float: left;
+}
+
+.grid-text-2, .grid-img-1 {
+    width: 50%;
+    float: right;
+}
+
+.grid-text-1 h2, .grid-text-2 h2 {
+    text-align: left;
+}
+
+.background {
+    background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
+    text-align: center;
+}
+
+.trio i {
+    color: #BA0621;
+    font-size: 55px;
+    display: block;
+}
+
+.trio a {
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+}
+
+.brands, .jobs, .events {
+   display: inline-block;
+   text-align: center;
+   padding: 8% 12%;
+   /* width: calc( (100% / 3) - 20px);
+   margin: 10px; */
+}
+
+
+footer {
+    background: #6C0918;
+    padding: 60px;
+    line-height: 29px;
+}
+
+.sign-up {
+    width: 60%;
+    display: inline-block;
+    float: left;
+}
+
+
+form {
+    display: inline;  
+}
+
+.contact {
+    width: 30%;
+    float: left;
+}
+
+.sign-up p,
+.contact p,
+.footer-nav a,
+input[type=submit] {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+ 
+.sign-up label[for=email],
+.contact li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+}
+
+label[for=email] {
+    font-size: 26px;
+    display: inline;
+}
+
+input[type=email] {
+    padding: 1.5%;
+    font-size: 16px;
+    width: 60%;
+}
+
+input[type=submit] {
+    background: #0b0101;
+    border: 0;
+    padding: 2.5%;
+    font-size: 16px;
+    width: 25%;
+}
+
+.footer-nav a {
+    width: 10%;
+    float: right;
+    text-align: right;
+}
+
+.footer-nav ul li {
+    /* float: right; */
+}
+
+.copy {
+    background: #0b0101;
+    color: white;
+    display: block;
+}
+
+.copy p {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
